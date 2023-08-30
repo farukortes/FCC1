@@ -1,0 +1,13 @@
+list1=["32 + 8", "1 * 3801", "9999 + 9999", "523 - 49","523 - 49","523 - 49"] # burada bilerek * koyduk denemek için 
+
+for x in list1:
+    val=x.split(' ')
+    val2=val[1]
+    print(type(val2))
+    print(val[1])
+    if val2 == '+' or val2 =='-':
+        print("Go on, the operator is appropriate")
+    else:
+        print("Error: Operator must be '+' or '-'. ")
+        exit()
+    

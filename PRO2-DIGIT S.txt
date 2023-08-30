@@ -1,0 +1,14 @@
+list1=["32 + 8", "1 * 3801", "9999 + 9999", "523 - 49","523 - 49","523 - 49"] # burada bilerek * koyduk denemek için 
+for x in list1:
+  val=x.split(' ')
+  val1=val[0]
+  val2=val[2]
+  print(type(val1),type(val2))
+  if (val1.isdigit()==True) and (val2.isdigit()==True):
+      print("Go on, the operator contains only digits")
+  else:
+      print("Error: Numbers must only contain digits.")
+      exit()
+      
+
+print("It works man!")
