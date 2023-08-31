@@ -21,9 +21,9 @@ def arithmetic_arranger(list):
         print("Go on, the number of items is less than 5")
         
      # 2- The appropriate operators the function will accept are addition and subtraction. 
-     # M ultiplication and division will return an error. Other operators not mentioned in this 
-     # bullet point will not need to be tested. The error returned will be: Error: Operator must 
-     # be '+' or '-'.   
+     # Multiplication and division will return an error. Other operators not mentioned in this 
+     # bullet point will not need to be tested. The error returned will be: 
+     # Error: Operator must # be '+' or '-'.   
      
      # For trials: "32 + 8", "1 * 3801", "9999 + 9999"
         
@@ -33,11 +33,23 @@ def arithmetic_arranger(list):
         val2=val[1]
         print(type(val2))
         print(val[1])
-        if val2 == '+' or val2 =='-':
-            return print("Go on, the operator is appropriate")
-        else:
-            print("Error: Operator must be '+' or '-'. ")
-            exit()  
+        if val2 != '+' or val2 !='-':
+            return print("Error: Operator must be '+' or '-'.")
+            exit()
+            
+    for x in input_list:
+        
+        
+        if '+' in x or '-' in x:
+            try:
+            result = eval(x)
+        print(f"Result: {result}")
+    except:
+        print("An error occurred while evaluating the expression.")
+else:
+    print("Invalid operator. Only + and - are allowed.")        
+            
+            
             
 arithmetic_arranger(list)
 
