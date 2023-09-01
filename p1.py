@@ -11,21 +11,25 @@ print('The length of list: ', lng)
 
 
 def arithmetic_arranger(list):
+    """
+    1- Error: Too many problems.
     # 1- length of list-- limit is 5,  Check if too many inputs are available
-    #   "32 + 8", "1 - 3801", "9999 + 9999", "523 - 49","523 - 49","523 - 49"  ---too many
-    #   "32 + 8", "1 - 3801", "9999 + 9999",---- less than 5   
+    # For trials  "32 + 8", "1 - 3801", "9999 + 9999", "523 - 49","523 - 49","523 - 49"  ---too many
+    #   For trials "32 + 8", "1 - 3801", "9999 + 9999",---- less than 5 """  
     if lng>5:
         return print("Error: Too many problems.")
         exit()
     else:
         print("Go on, the number of items is less than 5")
-        
-     # 2- The appropriate operators the function will accept are addition and subtraction. 
+    
+     """  
+     # 2-Error: Operator must be '+' or '-'. 
+     # The appropriate operators the function will accept are addition and subtraction. 
      # Multiplication and division will return an error. Other operators not mentioned in this 
      # bullet point will not need to be tested. The error returned will be: 
      # Error: Operator must # be '+' or '-'.   
      
-     # For trials: "32 + 8", "1 * 3801", "9999 + 9999"
+     # For trials: "32 + 8", "1 * 3801", "9999 + 9999" """ 
         
     for x in input_list:
         val=x.split(' ')
